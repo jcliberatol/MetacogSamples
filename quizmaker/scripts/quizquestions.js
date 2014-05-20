@@ -41,6 +41,7 @@ function showScore()
     el.set('html', '<b>Thank you for participating!</b><br>');
     $('result').adopt(el);
     
+    
     var el = new Element('div');
     el.set('html', '<b>Score: ' + score.numCorrectAnswers + ' of ' + score.numQuestions + '</b><br>');
     $('result').adopt(el);
