@@ -1,4 +1,4 @@
 metacog-tutorials
 =================
 
-Tutorials and samples for the Metacog platform
+Tutorials and samples for the Metacog platform 
