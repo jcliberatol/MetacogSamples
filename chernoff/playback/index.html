@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <script  src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="js/d3.min.js"></script>
+  <script type="text/javascript" src="js/chernoff.js"></script>
+  <script type="text/javascript" src="//cdn.metacog.com/metacog-2.2.2.js"></script>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Chernoff Face</title>
+
+</head>
+<body>
+
+  <header>
+	<img src="//www.metacog.com/developer/examples/img/logo_metacog.svg"></img>
+	<h1>Chernoff Face</h1>
+	<h2>A Metacog Tutorial: Playback and Training Instrumentation</h2>
+  </header>
+
+
+  <main>
+
+	<ul class="menu">
+	  <li>
+		<input type="range" id="f" max="1.0" min="0.0" value="0.0" step="0.01"></input>
+		<label for="f" >face</label>
+	  </li>
+	  <li>
+		<input type="range" id="h" max="1.0" min="-1.0" value="0.0" step="0.01"></input>
+		<label for="h" >hair</label>
+	  </li>
+	  <li>
+		<input type="range" id="m" max="1.0" min="-1.0" value="0.0" step="0.01"></input>
+		<label for="m" >mouth</label>
+	  </li>
+	  <li>
+		<input type="range" id="b" max="1.0" min="-1.0" value="0.0" step="0.01"></input>
+		<label for="b" >brow</label>
+	  </li>
+	</ul>
+
+	<div class="scene">
+	</div>
+
+	<ul class="menu">
+	  <li>
+		<input type="range" id="nw" max="1.0" min="0.0" value="0.0" step="0.01"></input>
+		<label for="nw" >nosew</label>
+	  </li>
+	  <li>
+		<input type="range" id="nh" max="1.0" min="0.0" value="0.0" step="0.01"></input>
+		<label for="nh" >noseh</label>
+	  </li>
+	  <li>
+		<input type="range" id="ew" max="1.0" min="0.0" value="0.0" step="0.01"></input>
+		<label for="ew" >eyew</label>
+	  </li>
+	  <li>
+		<input type="range" id="eh" max="1.0" min="0.0" value="0.0" step="0.01"></input>
+		<label for="eh" >eyeh</label>
+	  </li>
+	</ul>
+
+  </main>
+<section>
+  <h2>Your Challenge:</h2>
+  <p>Make the face look <strong>HAPPY</strong> by dragging the slides. Press "Snapshot" when done. </p>
+</section>
+<footer>
+  <button id="reset">Reset</button>
+  <button id"=snapshot">Snapshot</button>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/instrumentation.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+section#page1 {
+    max-width: 100%;
+    background-color: #9999aa;
+}
+
+section#page1 h2 {
+  font-size: 1em;
+}
+
+section#page1 img {
+margin: 0px 0px 0px 80px;
+}

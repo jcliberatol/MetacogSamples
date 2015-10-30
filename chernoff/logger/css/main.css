@@ -1,0 +1,167 @@
+@import url(//fonts.googleapis.com/css?family=Exo+2:600,600italic,500,300,300italic);
+
+html{
+  font-family: 'Exo 2', 'Open Sans', sans-serif;
+}
+
+body {
+
+  background: #9999aa;
+  color: #444455;
+  font-weight: 400;
+  font-size: 1em;
+
+
+  /*as container*/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+
+  height: 100vh;
+
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #ddddee;
+  flex: 0 0 auto;
+  padding: 10px;
+}
+
+header img {
+  width: 120px;
+  float: left;
+  margin-right: 20px;
+}
+
+header h1 {
+  font-size: 2em;
+  margin: 0px 0 5px 0;
+}
+
+header h2 {
+  font-size: 1.2em;
+}
+
+main {
+  background-color: rgba(255,255,255,0.4);
+  flex: 1 0 auto;
+  max-height: 400px;
+
+
+  /*as container*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+
+}
+
+
+main .menu {
+  background-color: #eeeeff;
+  flex: 0 0 auto;
+  list-style-type: none;
+
+  /*as container*/
+  display: flex;
+  flex-direction: column;
+}
+
+
+main .menu li {
+  margin: 0.5rem;
+  min-width: 200px;
+  padding: 5px;
+}
+
+main .menu li label,input {
+  display: block;
+  width: 90%;
+}
+
+
+main .scene {
+  background-color: white;
+  flex: 1 0 auto;
+
+}
+
+
+section {
+  padding: 10px;
+  line-height: 1.5;
+  background-color: #ddddee;
+  margin: 5px 0;
+}
+
+footer {
+  padding: 5px;
+
+  background-color: #ddddee;
+  flex: 0 0 auto;
+
+  /*as container*/
+  display: flex;
+  justify-content: center;
+}
+
+
+footer button {
+  padding: 10px;
+  min-width: 128px;
+  margin: 0 5px;
+  background-color: #ee8855;
+  border: 1px solid #eedd44;
+  border-radius: 20px;
+  color: white;
+  font-family: "exo 2";
+  font-weight: bold;
+  outline: 0;
+}
+
+footer button:active {
+  background-color: #eedd44;
+  color: #555566;
+}
+
+
+.scene svg .chernoff > * {
+  fill: none;
+  stroke: #000;
+}
+
+
+@media screen and (max-width: 700px){
+
+  main {
+    flex-direction: column;
+    max-height: none;
+  }
+
+  main .menu {
+    order: 2;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  main .menu li {
+    width: 45%;
+  }
+
+  main .scene {
+    order: 1;
+  }
+
+}
+
+@media screen and (max-width: 520px){
+  main .menu li {
+    width: 100%;
+  }
+
+}
+
