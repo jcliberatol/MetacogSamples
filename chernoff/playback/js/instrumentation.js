@@ -20,6 +20,10 @@ Listener.reset = function(){
   Main.render();
 };
 
+Listener.snapshot = function(data){
+  Main.snapshot(data);
+};
+
 Metacog.Router.init(Listener);
 Metacog.TrainingToolbar.init(true);
 Metacog.Logger.start();

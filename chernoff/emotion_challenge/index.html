@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Chernoff Face</title>
+	<link rel="stylesheet" href="../../css/theme.css" />
+	<link rel="stylesheet" href="../base/css/reset.css" />
+	<link rel="stylesheet" href="main.css" />
+
+	<script  src="../../vendor/jquery.min.js"></script>
+	<script  src="../../vendor/bootstrap.min.js"></script>
+  </head>
+  <body>
+	<div class="container">
+	  <header class="metacog-header">
+		<h1><img id="logo-metacog" src="../../img/logo_metacog.svg" /><span>Emotion Challenge: an example Learning Task</span></h1>
+	  </header>
+
+
+	  <nav>
+		<button data-target="intro" class="active">Intro</button>
+		<button data-target="challenge" >Challenge</button>
+		<button data-target="story" >Story</button>
+		<button data-target="widget" >Widget</button>
+	  </nav>
+
+	  <section id="intro">
+		<h2>Introduction</h2>
+
+		<p>"Emotion Challenge" is an example of a Learning Task that reuses an existing Metacog-instrumented widget.</p>
+
+	    <p>Please refer to <a href="https://developer.metacog.com/logger/tutorial_rubrics">Tutorial: Rubrics and Training Sessions</a> for a detailed description of the design and implementation process.</p>
+
+	  </section>
+
+	  <section id="story">
+		<h2>The Story</h2>
+		<p>Liz ran across the classroom's door as soon as the bell started to ring. She was really exited! that day Dad had promised her to be at the School's door early than the usual, and then they would go to the Zoo. Liz's eyes opened wide just thinking about the giant elephants, hers favorite animals, and a big smile made hers face shine.</p>
+		<p>But once she arrived to the door, hers smile vanished. Dad was not there! after a moment of confusion, anger changed hers face: "He forgot it!" she thought. "he forgot his promise!"</p>
+		<p>But then she said to herself: "and what if something bad happened to him?" she looked worried, and sad for being furious thinking that he had forgotten the visit to the zoo while maybe he was in some serious trouble.</p>
+		<p>Tears started to appear in hers eyes, but then a familiar voice said "Everything is OK, liz?".</p>
+		<p>With a soft smile, Liz said "Now everything is OK, Dad".</p>
+	  </section>
+
+ 	  <section id="challenge">
+		<h2>Your Challenge</h2>
+		<p>Read the story and for each question, assemble the face that better matches Liz's mood. Press "Snapshot" after setting up each face. You can press "reset" at any time to repeat the challenge again.</p>
+		<ol>
+		  <li>what was the mood of Liz while leaving the classroom?</li>
+		  <li>what was the mood of Liz when she discovered his dad was not at the School's door?</li>
+		  <li>what was the mood of Liz when she thought something bad would had happened to hers father?</li>
+		  <li>what was the mood of Liz when hers father appeared?</li>
+		</ol>
+	  </section>
+
+	  <section id="widget">
+	  <iframe src="../logger/index.html" width="890px" height="943px" border=0></iframe>
+	  </section>
+
+	  <script src="main.js"></script>
+	</body>
+  </html>

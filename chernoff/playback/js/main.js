@@ -45,6 +45,13 @@ var Main = (function (Metacog) {
   }
 
   /**
+   * 
+   */
+  Main.snapshot = function(data){
+    console.log("a snapshot had been taken:"+ JSON.stringify(data));
+  }
+
+  /**
   * initialize model and view, attach event handlers
   */
   Main.init = function(){
@@ -78,7 +85,7 @@ var Main = (function (Metacog) {
       });
     });
 
-    d3.selectAll("input").on("input", function(){
+    d3.selectAll(".menu input").on("input", function(){
       var sliderid = this.getAttribute("id");
       var value = this.valueAsNumber;
       Metacog.Router.sendEvent({
@@ -91,10 +98,18 @@ var Main = (function (Metacog) {
       });
     });
 
-    d3.selectAll("button#reset").on("click", function(){
+    d3.selectAll("footer button#reset").on("click", function(){
       Metacog.Router.sendEvent({
 	      event: "reset",
 	      data: {},
+	      type: Metacog.EVENT_TYPE.MODEL
+      });
+    });
+
+    d3.selectAll("footer button#snapshot").on("click", function(){
+     Metacog.Router.sendEvent({
+	      event: "snapshot",
+	      data: Main.data,
 	      type: Metacog.EVENT_TYPE.MODEL
       });
     });
